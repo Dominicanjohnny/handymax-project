@@ -10,13 +10,17 @@ import { Approutes } from './app.routing.module';
 import { ServiceProviderComponent } from './components/service-provider/service-provider.component';
 import { LocationComponent } from './components/location/location.component';
 import { AgmCoreModule } from '@agm/core';
+import { PlumberComponent} from './plumber/plumber.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     BlankComponent,
     FullComponent,
     ServiceProviderComponent,
-    LocationComponent
+    LocationComponent,
+    PlumberComponent
+    
   ],
   imports: [
     BrowserModule,

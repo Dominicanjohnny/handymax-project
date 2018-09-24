@@ -5,6 +5,7 @@ import { FullComponent } from './layouts/full/full.component';
 import { BlankComponent } from './layouts/blank/blank.component';
 import { ServiceProviderComponent } from './components/service-provider/service-provider.component';
 import { LocationComponent } from './components/location/location.component';
+import { PlumberComponent} from './plumber/plumber.component';
 
 export const Approutes: Routes = [
   {
@@ -51,7 +52,18 @@ export const Approutes: Routes = [
   },
 
   {
+    path: '',
+    component: FullComponent,
+    children: [{
+      path: 'plumber-component',
+      component: PlumberComponent
+    }]
+  },
+
+  {
     path: '**',
     redirectTo: '/authentication/signup'
   }];
+
+
 

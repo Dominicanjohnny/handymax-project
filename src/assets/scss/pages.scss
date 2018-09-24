@@ -31,7 +31,8 @@ File: scss
 }
 
 .page-wrapper {
-  background-color: #398bf7;
+  // background-image: url('/assets/images/background/handybackground.jpg')
+  background-color: grey;
   padding-bottom: 60px;
   height: calc(100vh - 64px); 
   position: relative;
@@ -1255,6 +1256,16 @@ Login register and recover password Page
 ******************/
 
 .login-register {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  padding: 5% 0;
+  position: fixed;
+}
+
+ .provider-header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
