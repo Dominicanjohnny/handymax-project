@@ -8,7 +8,7 @@ import { ViewChild } from '@angular/core';
   templateUrl: './location.component.html',
   styles: [`
     agm-map {
-      height: 300px;
+      height: 500px;
     }
   `]
 })
